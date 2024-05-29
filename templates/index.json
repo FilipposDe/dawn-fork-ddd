@@ -3,7 +3,7 @@
     "custom_liquid_4KGgeD": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<style>\n\n#shopify-section-template--20724156465187__rich_text {\n{% if customer.id %}\ndisplay: none;\n{% else %}\ndisplay: block;\n{% endif %}\n}\n#shopify-section-template--20724156465187__rich_text_RwqNEx {\n{% if customer.id %}\ndisplay: block;\n{% else %}\ndisplay: none;\n{% endif %}\n}\n\n\n<\/style>",
+        "custom_liquid": "<style>\n{% unless customer.tags contains \"ordered_once\" %}\n<style>\n#shopify-section-template--20724156465187__rich_text_RwqNEx3 { \n  display: none !important;\n}\n<\/style>\n{% endunless %}\n \n \n\n\n<\/style>",
         "color_scheme": "",
         "padding_top": 0,
         "padding_bottom": 0
