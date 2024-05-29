@@ -1,5 +1,14 @@
 {
   "sections": {
+    "custom_liquid_4KGgeD": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{% if customer.id %}\n<style>\n#shopify-section-template--20724156465187__rich_text {\ndisplay: none;\n}\n<\/style>\n{% endif %}",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "rich_text": {
       "type": "rich-text",
       "blocks": {
@@ -166,6 +175,7 @@
     }
   },
   "order": [
+    "custom_liquid_4KGgeD",
     "rich_text",
     "featured_collection",
     "collage",
