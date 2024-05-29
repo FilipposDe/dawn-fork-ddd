@@ -1,12 +1,50 @@
 {
   "sections": {
-    "custom_liquid_4KGgeD": {
-      "type": "custom-liquid",
+    "image_banner_DfyktL": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_UVJtfT": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1"
+          }
+        },
+        "text_mJ9wEb": {
+          "type": "text",
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "buttons_6WwbYy": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_UVJtfT",
+        "text_mJ9wEb",
+        "buttons_6WwbYy"
+      ],
       "settings": {
-        "custom_liquid": "<style>\n{% unless customer.tags contains \"ordered_once\" %}\n\n#shopify-section-template--20724156465187__rich_text_RwqNEx { \n  display: none !important;\n}\n\n{% endunless %}\n \n \n\n\n<\/style>",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
         "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 0
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
       }
     },
     "rich_text": {
@@ -15,14 +53,14 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Talk about your brand",
+            "heading": "Regular content",
             "heading_size": "h1"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+            "text": "<p>Lorem Ipsum<strong> <\/strong>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.<\/p>"
           }
         }
       },
@@ -39,26 +77,35 @@
         "padding_bottom": 0
       }
     },
-    "rich_text_RwqNEx": {
+    "custom_liquid_4KGgeD": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<style>\n{% unless customer.tags contains \"ordered_once\" %}\n#shopify-section-template--20724156465187__rich_text_RwqNEx { \n  display: none !important;\n}\n{% endunless %}\n<\/style>",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_gdt6dw": {
       "type": "rich-text",
       "blocks": {
-        "heading_KJcDwc": {
+        "heading_Uztg9m": {
           "type": "heading",
           "settings": {
-            "heading": "Talk about your brand LOGGED",
+            "heading": "You've ordered once!",
             "heading_size": "h1"
           }
         },
-        "text_xHFWRY": {
+        "text_egf8UW": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+            "text": "<p>Lorem Ipsum<strong> <\/strong>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.<\/p>"
           }
         }
       },
       "block_order": [
-        "heading_KJcDwc",
-        "text_xHFWRY"
+        "heading_Uztg9m",
+        "text_egf8UW"
       ],
       "settings": {
         "desktop_content_position": "center",
@@ -67,34 +114,6 @@
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 0
-      }
-    },
-    "featured_collection": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Featured products",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "all",
-        "products_to_show": 8,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": false,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "scheme-1",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "none",
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 28,
-        "padding_bottom": 36
       }
     },
     "collage": {
@@ -205,10 +224,10 @@
     }
   },
   "order": [
-    "custom_liquid_4KGgeD",
+    "image_banner_DfyktL",
     "rich_text",
-    "rich_text_RwqNEx",
-    "featured_collection",
+    "custom_liquid_4KGgeD",
+    "rich_text_gdt6dw",
     "collage",
     "video",
     "multicolumn"
